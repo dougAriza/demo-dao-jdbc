@@ -20,7 +20,12 @@ public class Program2 {
 		department = departmentDao.findById(2);
 		System.out.println(department);
 		
-
+		System.out.println("\n=== TESTE : department update");
+		department = departmentDao.findById(6);
+		department.setName("Motocicles");
+		departmentDao.update(department);
+		System.out.println("Id updated");
+		
 	}
 
 }
